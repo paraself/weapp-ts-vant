@@ -26,4 +26,5 @@ App({
             },
         });
     },
+    userInfoReadyCallback: function () { }
 });

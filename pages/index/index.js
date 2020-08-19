@@ -104,7 +104,7 @@ Page({
     onJump: function (e) {
         console.log(e);
         wx.navigateToMiniProgram({
-            appId: 'wx226bfb6d90369d11',
+            appId: 'my-weapp-id',
             envVersion: 'develop'
         });
     }
