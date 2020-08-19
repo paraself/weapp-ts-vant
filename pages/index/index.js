@@ -36,8 +36,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var app = getApp();
 var dialog_1 = require("@vant/weapp/dialog/dialog");
+var app = getApp();
 Page({
     data: {
         motto: 'Hello World yuyuyu',
@@ -46,9 +46,8 @@ Page({
         canIUse: wx.canIUse('button.open-type.getUserInfo')
     },
     bindViewTap: function () {
-        this.setData;
         wx.navigateTo({
-            url: '../logs/logs',
+            url: '../logs/logs'
         });
     },
     onLoad: function () {
@@ -67,14 +66,14 @@ Page({
                 if (app.globalData.userInfo) {
                     this.setData({
                         userInfo: app.globalData.userInfo,
-                        hasUserInfo: true,
+                        hasUserInfo: true
                     });
                 }
                 else if (this.data.canIUse) {
                     app.userInfoReadyCallback = function (res) {
                         _this.setData({
                             userInfo: res.userInfo,
-                            hasUserInfo: true,
+                            hasUserInfo: true
                         });
                     };
                 }
@@ -84,9 +83,9 @@ Page({
                             app.globalData.userInfo = res.userInfo;
                             _this.setData({
                                 userInfo: res.userInfo,
-                                hasUserInfo: true,
+                                hasUserInfo: true
                             });
-                        },
+                        }
                     });
                 }
                 return [2];
@@ -98,7 +97,7 @@ Page({
         app.globalData.userInfo = e.detail.userInfo;
         this.setData({
             userInfo: e.detail.userInfo,
-            hasUserInfo: true,
+            hasUserInfo: true
         });
     },
     onJump: function (e) {

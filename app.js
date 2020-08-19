@@ -9,7 +9,7 @@ App({
         wx.login({
             success: function (res) {
                 console.log(res.code);
-            },
+            }
         });
         wx.getSetting({
             success: function (res) {
@@ -20,10 +20,10 @@ App({
                             if (_this.userInfoReadyCallback) {
                                 _this.userInfoReadyCallback(res);
                             }
-                        },
+                        }
                     });
                 }
-            },
+            }
         });
     },
     userInfoReadyCallback: function () { }

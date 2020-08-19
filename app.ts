@@ -1,9 +1,9 @@
 // app.ts
 interface IAppOption {
   globalData: {
-    userInfo?: WechatMiniprogram.UserInfo,
+    userInfo?: WechatMiniprogram.UserInfo
   }
-  userInfoReadyCallback?: WechatMiniprogram.GetUserInfoSuccessCallback,
+  userInfoReadyCallback?: WechatMiniprogram.GetUserInfoSuccessCallback
 }
 
 App<IAppOption>({
@@ -19,7 +19,7 @@ App<IAppOption>({
       success: res => {
         console.log(res.code)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      },
+      }
     })
     // 获取用户信息
     wx.getSetting({
@@ -36,10 +36,10 @@ App<IAppOption>({
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
               }
-            },
+            }
           })
         }
-      },
+      }
     })
   },
   userInfoReadyCallback() {}

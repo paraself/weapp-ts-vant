@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "微信小程序 + Typescript + VantUI 模板示例项目",
   "scripts": {
-    "build": "npx tsc -p .",
-    "npm": "node npm && npm run dts",
-    "dts": "gulp dts"
+    "build": "npm run dts && npx tsc -p .",
+    "build-npm": "node build-npm.js && npm run dts",
+    "dts": "gulp dts",
+    "lint": "npx eslint . --fix"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +19,22 @@
     "url": "https://github.com/paraself/weapp-ts-vant"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
     "dotenv": "^8.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-standard-with-typescript": "^18.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "gulp": "^4.0.2",
+    "husky": "^4.2.5",
     "miniprogram-api-typings": "^2.12.0",
     "typescript": "^3.9.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
