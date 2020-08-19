@@ -1,4 +1,4 @@
-# TypeScript + Vant UI 快速启动项目
+# TypeScript + Vant UI 模板示例项目
 
 看到不少朋友都不知道如何在小程序中同时配置ts和vant ui, 于是就写了个这个项目帮大家快速开始搭建项目。
 

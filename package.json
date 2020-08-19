@@ -1,7 +1,7 @@
 {
   "name": "weapp-ts-vant",
   "version": "1.0.0",
-  "description": "",
+  "description": "微信小程序 + Typescript + VantUI 模板示例项目",
   "scripts": {
     "build": "npx tsc -p .",
     "npm": "node npm && npm run dts",
