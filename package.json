@@ -1,0 +1,22 @@
+{
+  "name": "pte-weapp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npx tsc -p .",
+    "npm": "node npm && npm run dts",
+    "dts": "gulp dts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@vant/weapp": "^1.4.4"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "miniprogram-api-typings": "^2.12.0",
+    "typescript": "^3.9.7"
+  }
+}

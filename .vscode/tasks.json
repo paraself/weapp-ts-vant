@@ -1,0 +1,23 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558 
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "npm",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "小程序构建NPM",
+      "detail": "npm run npm"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "编译TS",
+      "detail": "npm run build"
+    }
+  ]
+}
