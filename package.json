@@ -1,5 +1,5 @@
 {
-  "name": "pte-weapp",
+  "name": "weapp-ts-vant",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -12,6 +12,10 @@
   "license": "",
   "dependencies": {
     "@vant/weapp": "^1.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paraself/weapp-ts-vant"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
