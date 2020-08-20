@@ -1,5 +1,5 @@
 // logs.js
-import { formatTime } from '@/utils'
+import { formatTime } from '../../utils/index'
 
 Page({
   data: {

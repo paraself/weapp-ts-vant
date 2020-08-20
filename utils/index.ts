@@ -1,3 +1,4 @@
+
 export function formatTime(date: Date): string {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -12,3 +13,7 @@ function formatNumber(n: number): string {
   const _n = n.toString()
   return _n[1] ? _n : ('0' + _n)
 }
+
+/** 导出AV实例 */
+import * as AV_ from './av-weapp-min'
+export const AV = AV_

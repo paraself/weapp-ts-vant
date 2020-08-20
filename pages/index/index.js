@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var dialog_1 = require("@vant/weapp/dialog/dialog");
-var app_1 = require("@/app");
+var app = getApp();
 Page({
     data: {
         motto: 'Hello World yuyuyu',
@@ -63,14 +63,14 @@ Page({
                         });
                     }
                 });
-                if (app_1.app.globalData.userInfo) {
+                if (app.globalData.userInfo) {
                     this.setData({
-                        userInfo: app_1.app.globalData.userInfo,
+                        userInfo: app.globalData.userInfo,
                         hasUserInfo: true
                     });
                 }
                 else if (this.data.canIUse) {
-                    app_1.app.userInfoReadyCallback = function (res) {
+                    app.userInfoReadyCallback = function (res) {
                         _this.setData({
                             userInfo: res.userInfo,
                             hasUserInfo: true
@@ -80,7 +80,7 @@ Page({
                 else {
                     wx.getUserInfo({
                         success: function (res) {
-                            app_1.app.globalData.userInfo = res.userInfo;
+                            app.globalData.userInfo = res.userInfo;
                             _this.setData({
                                 userInfo: res.userInfo,
                                 hasUserInfo: true
@@ -94,7 +94,7 @@ Page({
     },
     getUserInfo: function (e) {
         console.log(e);
-        app_1.app.globalData.userInfo = e.detail.userInfo;
+        app.globalData.userInfo = e.detail.userInfo;
         this.setData({
             userInfo: e.detail.userInfo,
             hasUserInfo: true

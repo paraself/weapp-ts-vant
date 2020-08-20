@@ -2,7 +2,7 @@
  * 小程序空白的页面，已经把全部的生命周期都罗列出来了，创建新页面的时候，只需要把这个页面复制过去就好了
  */
 // @ts-expect-error
-import { app } from '@/app'
+import { app } from '../../app'
 
 /** 页面的自定义数据类型 */
 interface IPageData {

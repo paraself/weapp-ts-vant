@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.formatTime = void 0;
+exports.AV = exports.formatTime = void 0;
 function formatTime(date) {
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
@@ -15,3 +15,5 @@ function formatNumber(n) {
     var _n = n.toString();
     return _n[1] ? _n : ('0' + _n);
 }
+var AV_ = require("./av-weapp-min");
+exports.AV = AV_;

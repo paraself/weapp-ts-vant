@@ -1,5 +1,7 @@
 import Dialog from '@vant/weapp/dialog/dialog'
-import { app } from '@/app'
+import { IAppOption } from '../../app';
+const app = getApp<IAppOption>()
+
 Page({
   data: {
     motto: 'Hello World yuyuyu',

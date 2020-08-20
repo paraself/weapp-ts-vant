@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var utils_1 = require("@/utils");
+var index_1 = require("../../utils/index");
 Page({
     data: {
         logs: []
@@ -8,7 +8,7 @@ Page({
     onLoad: function () {
         this.setData({
             logs: (wx.getStorageSync('logs') || []).map(function (log) {
-                return utils_1.formatTime(new Date(log));
+                return index_1.formatTime(new Date(log));
             })
         });
     }

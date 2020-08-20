@@ -1,5 +1,12 @@
+import { AV } from './utils/index';
+AV.init({
+  appId: 'xxxxxx',
+  appKey: 'xxxxxxx',
+  serverURL: 'https://leancloud.cn'
+})
+
 // app.ts
-interface IAppOption {
+export interface IAppOption {
   globalData: {
     userInfo?: WechatMiniprogram.UserInfo
   }
@@ -12,6 +19,7 @@ export const app = getApp<IAppOption>()
 App<IAppOption>({
   globalData: {},
   onLaunch() {
+    AV.Cloud.getServerDate().then(res => console.log(res))
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
