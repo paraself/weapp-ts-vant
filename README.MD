@@ -7,6 +7,7 @@
 2. 在开发工具里点击`构建npm`
 3. 执行命令`npm run dts` 以便将vant ui的定义文件拷贝到miniprogram_npm中
 4. 在小程序开发工具里打开本项目，并配置自定义预编译命令为`npm run build`
+5. 也可以`npm run dev`进入开发模式，可以实时监控编译错误和lint错误
 
 其他：
 1. 加入了页面的boilerplate文件，需要创建页面的ts文件的时候，可以直接复制一份这个文件
