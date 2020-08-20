@@ -1,10 +1,13 @@
 // app.ts
-export interface IAppOption {
+interface IAppOption {
   globalData: {
     userInfo?: WechatMiniprogram.UserInfo
   }
   userInfoReadyCallback?: WechatMiniprogram.GetUserInfoSuccessCallback
 }
+
+/** 将带有泛型的app实例导出给别的页面使用 */
+export const app = getApp<IAppOption>()
 
 App<IAppOption>({
   globalData: {},

@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var app = getApp();
 Page({
     data: {
         someNumber: 1,

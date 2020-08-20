@@ -6,7 +6,8 @@
     "build": "npm run dts && npx tsc -p .",
     "build-npm": "node build-npm.js && npm run dts",
     "dts": "gulp dts",
-    "lint": "npx eslint . --fix"
+    "lint": "npx eslint . --fix",
+    "dev": "tsc-watch --p . --onSuccess \"npm run lint\""
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "gulp": "^4.0.2",
     "husky": "^4.2.5",
     "miniprogram-api-typings": "^2.12.0",
+    "tsc-watch": "^4.2.9",
     "typescript": "^3.9.7"
   },
   "husky": {
