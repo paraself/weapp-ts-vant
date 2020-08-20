@@ -1,4 +1,4 @@
-import { AV } from './utils/index';
+import { AV } from './utils/index'
 AV.init({
   appId: 'xxxxxx',
   appKey: 'xxxxxxx',
