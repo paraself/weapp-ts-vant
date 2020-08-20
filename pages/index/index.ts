@@ -1,4 +1,5 @@
 import Dialog from '@vant/weapp/dialog/dialog'
+import { IAppOption } from '@/app'
 const app = getApp<IAppOption>()
 Page({
   data: {

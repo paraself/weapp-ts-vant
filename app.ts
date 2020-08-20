@@ -1,5 +1,5 @@
 // app.ts
-interface IAppOption {
+export interface IAppOption {
   globalData: {
     userInfo?: WechatMiniprogram.UserInfo
   }
